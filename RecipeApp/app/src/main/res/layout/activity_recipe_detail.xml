@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_recipe1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8111"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgRecipe"
+            tools:text="Sosis Solo" />
+
+        <TextView
+            android:id="@+id/txtSubtitleBahan"
+            style="@style/TextResep.Subtitle"
+            android:text="Bahan yang dibutuhkan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtBahan"
+            style="@style/TextResep"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubtitleBahan"
+            tools:text="1 Sendok Garam Teh">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtSubtitleCara"
+            style="@style/TextResep.Subtitle"
+            android:text="Cara Memasak"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtBahan">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtCara"
+            style="@style/TextResep"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubtitleCara"
+            tools:text="Caranyaaaa">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
